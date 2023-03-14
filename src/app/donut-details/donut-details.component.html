@@ -1,0 +1,12 @@
+<a [routerLink]="['/']">Back To Donut List</a>
+
+<p *ngIf="loading">Loading...</p>
+
+<div *ngIf="!loading">
+    <p>Donut Name: {{donut.name}}</p>
+    <p>Calories: {{donut.calories}}</p>
+    <img src="{{donut.photo}}"width="150px" height="auto"/>
+    <p>Photo Attribution: {{donut.photo_attribution}}</p>
+    <p>Extras: {{donut.extras}}</p>
+
+</div>

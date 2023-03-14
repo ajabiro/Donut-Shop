@@ -1,0 +1,13 @@
+<h2>Donut Menu</h2>
+
+<div *ngFor="let donut of donuts">
+
+    <ul>
+        <li>    
+            
+            <a [routerLink]="['donut', donut.id ]"><p>{{donut.name}}</p></a>
+        
+        </li>
+        
+      </ul>  
+      
